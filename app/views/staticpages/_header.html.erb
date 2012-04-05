@@ -1,8 +1,10 @@
 <ul><div class="heading">
 <% if user_signed_in? %>
   <li><div class="button"><%= link_to "Sign Out", destroy_user_session_path %></div></li>
+  <li><div class="button new-petition"><%= link_to "Create a Petition", new_petition_path %></div></li>
 <% else %>
   <li><div class="button"><%= link_to "Sign In", new_user_session_path %></div></li> 
   <li><div class="button"><%= link_to "Sign Up", new_user_registration_path %></div></li>
-<% end %></ul 
+<% end %>
+  <li><div class="button"><%= link_to "View Current Petitions!", petitions_path %></div></li></ul>
 </div>

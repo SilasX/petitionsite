@@ -1,1 +1,13 @@
+
+
+<% if user_signed_in? %>
+
+<div class='encouragement'><%= "Why, thank ya kindly for registering on our site and signing in.  Just click on that New Petition button up there and you're in business!" %> </div>
+
+<% else %>
+
 <div class="welcome">Thanks for coming to this totally awesome petition site, which of course has nothing to do with that pretender site change.org! </div>
+
+<div class="explanation"><%= "Around here, folks like to be signed in before they just start a-makin petitions like they're goin' out of style.  So why don't you saddle up, get an account, sign in, and start changin' the world?" %> </div>
+
+<% end %>

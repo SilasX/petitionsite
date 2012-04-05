@@ -1,4 +1,8 @@
 Petitionsite::Application.routes.draw do
+  resources :signatures
+
+  resources :petitions
+
   devise_for :users
   root :to => "staticpages#welcome"
   # The priority is based upon order of creation:
