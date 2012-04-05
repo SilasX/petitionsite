@@ -41,7 +41,7 @@ class SignaturesController < ApplicationController
   # POST /signatures.json
   def create
     logger.info "~"*30
-    logger.info params[:signature]
+    logger.info current_user.inspect
     logger.info "~"*30
     logger.info params[:petition_id]
     logger.info "~"*30

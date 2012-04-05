@@ -15,7 +15,7 @@
     <td><%= petition.description %></td>
     <td><%= link_to 'Show', petition %></td>
     <td><%= link_to 'Edit', edit_petition_path(petition) %></td>
-    <td><%= link_to 'Sign This Petition!', signatures_path, method: :post, :petition_id => petition.id %></td>
+    <td><%= link_to 'Sign This Petition!', signatures_path(:petition_id => petition.id), method: :post %></td>
     <td><%= link_to 'Destroy', petition, confirm: 'Are you sure?', method: :delete %></td>
   </tr>
 <% end %>
